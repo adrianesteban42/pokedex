@@ -5,5 +5,5 @@
 from frappe.tests.utils import FrappeTestCase
 
 
-class Testpokemons(FrappeTestCase):
+class TestPokemon(FrappeTestCase):
 	pass

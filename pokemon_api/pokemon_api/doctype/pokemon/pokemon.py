@@ -3,7 +3,11 @@
 
 import frappe
 from frappe.website.website_generator import WebsiteGenerator
+from controllers.controlador import update_pokemon_from_api
 
 
-class pokemons(WebsiteGenerator):
-	pass
+
+class Pokemon(WebsiteGenerator):
+	
+	def get_list_context(context):
+		update_pokemon_from_api()
