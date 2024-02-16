@@ -2,29 +2,33 @@
  "actions": [],
  "allow_guest_to_view": 1,
  "allow_rename": 1,
- "autoname": "field:nombre_pokemon",
- "creation": "2024-02-09 09:43:20.533995",
+ "autoname": "field:name_ability",
+ "creation": "2024-02-15 13:49:28.179530",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
-  "pokemon",
-  "nombre_pokemon",
+  "ability_section",
+  "name_ability",
+  "effect",
   "route",
-  "publicado"
+  "published"
  ],
  "fields": [
   {
-   "fieldname": "pokemon",
+   "fieldname": "ability_section",
    "fieldtype": "Section Break",
-   "label": "Pokemon"
+   "label": "Ability"
   },
   {
-   "fieldname": "nombre_pokemon",
+   "fieldname": "name_ability",
    "fieldtype": "Data",
-   "label": "Nombre",
-   "length": 255,
-   "read_only": 1,
+   "label": "Name",
    "unique": 1
+  },
+  {
+   "fieldname": "effect",
+   "fieldtype": "Text",
+   "label": "Effect"
   },
   {
    "fieldname": "route",
@@ -33,19 +37,19 @@
   },
   {
    "default": "1",
-   "fieldname": "publicado",
+   "fieldname": "published",
    "fieldtype": "Check",
-   "label": "Pubicado"
+   "label": "Published"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
- "is_published_field": "publicado",
+ "is_published_field": "published",
  "links": [],
- "modified": "2024-02-09 11:58:06.858920",
+ "modified": "2024-02-16 13:48:18.979691",
  "modified_by": "Administrator",
  "module": "Pokemon Api",
- "name": "Pokemon",
+ "name": "Ability",
  "naming_rule": "Expression (old style)",
  "owner": "Administrator",
  "permissions": [
@@ -62,7 +66,7 @@
    "write": 1
   }
  ],
- "route": "pokemon",
+ "route": "ability",
  "sort_field": "modified",
  "sort_order": "DESC",
  "states": []

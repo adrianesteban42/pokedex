@@ -1,0 +1,67 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:nombre_pokemon",
+ "creation": "2024-02-13 12:46:02.729302",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "pokemon_section",
+  "nombre_pokemon",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "pokemon_section",
+   "fieldtype": "Section Break",
+   "label": "Pokemon"
+  },
+  {
+   "fieldname": "nombre_pokemon",
+   "fieldtype": "Data",
+   "label": "Nombre",
+   "unique": 1
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-02-16 13:48:58.645965",
+ "modified_by": "Administrator",
+ "module": "Pokemon Api",
+ "name": "Pokedex",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "pokedex",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

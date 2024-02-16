@@ -1,0 +1,93 @@
+{
+ "actions": [],
+ "allow_guest_to_view": 1,
+ "allow_rename": 1,
+ "autoname": "field:name_move",
+ "creation": "2024-02-15 13:14:09.642096",
+ "doctype": "DocType",
+ "engine": "InnoDB",
+ "field_order": [
+  "move_section",
+  "name_move",
+  "type_damage",
+  "effect",
+  "power",
+  "type",
+  "route",
+  "published"
+ ],
+ "fields": [
+  {
+   "fieldname": "move_section",
+   "fieldtype": "Section Break",
+   "label": "Move"
+  },
+  {
+   "fieldname": "name_move",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
+  },
+  {
+   "fieldname": "type_damage",
+   "fieldtype": "Select",
+   "label": "Type damage",
+   "options": "status\nphysical\nspecial"
+  },
+  {
+   "fieldname": "effect",
+   "fieldtype": "Data",
+   "label": "Effect"
+  },
+  {
+   "fieldname": "power",
+   "fieldtype": "Int",
+   "label": "Power"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Link",
+   "label": "Type",
+   "options": "type"
+  },
+  {
+   "fieldname": "route",
+   "fieldtype": "Data",
+   "label": "Route"
+  },
+  {
+   "default": "1",
+   "fieldname": "published",
+   "fieldtype": "Check",
+   "label": "Published"
+  }
+ ],
+ "has_web_view": 1,
+ "index_web_pages_for_search": 1,
+ "is_published_field": "published",
+ "links": [],
+ "modified": "2024-02-16 13:48:07.572469",
+ "modified_by": "Administrator",
+ "module": "Pokemon Api",
+ "name": "Move",
+ "naming_rule": "Expression (old style)",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "route": "move",
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
