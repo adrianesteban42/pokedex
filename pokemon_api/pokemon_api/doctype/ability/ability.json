@@ -33,7 +33,8 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
-   "label": "Route"
+   "label": "Route",
+   "read_only": 1
   },
   {
    "default": "1",
@@ -46,7 +47,7 @@
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-02-16 13:48:18.979691",
+ "modified": "2024-02-19 08:36:14.403962",
  "modified_by": "Administrator",
  "module": "Pokemon Api",
  "name": "Ability",

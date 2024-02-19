@@ -39,7 +39,8 @@
   {
    "fieldname": "route",
    "fieldtype": "Data",
-   "label": "Route"
+   "label": "Route",
+   "read_only": 1
   },
   {
    "default": "1",
@@ -51,9 +52,8 @@
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
- "is_submittable": 1,
  "links": [],
- "modified": "2024-02-16 13:48:31.660553",
+ "modified": "2024-02-19 12:13:58.592767",
  "modified_by": "Administrator",
  "module": "Pokemon Api",
  "name": "type",
