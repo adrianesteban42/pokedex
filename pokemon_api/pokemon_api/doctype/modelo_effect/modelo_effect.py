@@ -5,5 +5,5 @@
 from frappe.model.document import Document
 
 
-class Modelo_tabla(Document):
+class Modelo_Effect(Document):
 	pass

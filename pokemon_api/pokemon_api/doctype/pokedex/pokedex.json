@@ -2,13 +2,13 @@
  "actions": [],
  "allow_guest_to_view": 1,
  "allow_rename": 1,
- "autoname": "field:nombre_pokemon",
+ "autoname": "field:name_pokemon",
  "creation": "2024-02-13 12:46:02.729302",
  "doctype": "DocType",
  "engine": "InnoDB",
  "field_order": [
   "pokemon_section",
-  "nombre_pokemon",
+  "name_pokemon",
   "ability",
   "route",
   "published"
@@ -18,12 +18,6 @@
    "fieldname": "pokemon_section",
    "fieldtype": "Section Break",
    "label": "Pokemon"
-  },
-  {
-   "fieldname": "nombre_pokemon",
-   "fieldtype": "Data",
-   "label": "Nombre",
-   "unique": 1
   },
   {
    "fieldname": "route",
@@ -41,14 +35,20 @@
    "fieldname": "ability",
    "fieldtype": "Table",
    "label": "Ability",
-   "options": "Modelo_tabla"
+   "options": "Modelo_Effect"
+  },
+  {
+   "fieldname": "name_pokemon",
+   "fieldtype": "Data",
+   "label": "Name",
+   "unique": 1
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-02-19 12:23:42.800998",
+ "modified": "2024-02-20 16:10:40.477876",
  "modified_by": "Administrator",
  "module": "Pokemon Api",
  "name": "Pokedex",

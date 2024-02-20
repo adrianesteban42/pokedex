@@ -17,15 +17,15 @@ def update_pokemon_from_api():
 		data = response.json()
 		frappe.errprint(data)
 		if data:
-			# 
 			for pokemon_data in data["results"]:
 				pokemon_url = pokemon_data["url"]
-				existeAbility = frappe.get_cached_doc('Ability', filters={"name_ability": pokemon_data["url"]}, fields=["name"])
-				if not existeAbility:		
+				existeAbility = frappe.get_cached_doc('Pokedex', filters={"name_pokemon": pokemon_data["url"]}, fields=["name"])
+				if not existeAbility:
 					doc = frappe.new_doc('Pokedex')
-					doc.nombre_pokemon = pokemon_data["name"]
-					for pokemon in pokemon_url["abilities"]:
-						doc.ability = pokemon[""]
-						 
-						 
+					doc.name_pokemon = pokemon_data["name"]
+					# for pokemon in pokemon_url["abilities"]:
+						# doc.ability = pokemon["ability"]["name"]
+						# doc.append('ability', {
+						# 	"name_effect": pokemon["ability"]["name"]
+						# })
 					doc.insert()
