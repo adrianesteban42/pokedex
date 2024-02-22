@@ -10,6 +10,7 @@
   "pokemon_section",
   "name_pokemon",
   "ability",
+  "type",
   "route",
   "published"
  ],
@@ -32,23 +33,29 @@
    "label": "Published"
   },
   {
-   "fieldname": "ability",
-   "fieldtype": "Table",
-   "label": "Ability",
-   "options": "Modelo_Effect"
-  },
-  {
    "fieldname": "name_pokemon",
    "fieldtype": "Data",
    "label": "Name",
    "unique": 1
+  },
+  {
+   "fieldname": "ability",
+   "fieldtype": "Table MultiSelect",
+   "label": "Ability",
+   "options": "Modelo_Effect"
+  },
+  {
+   "fieldname": "type",
+   "fieldtype": "Table MultiSelect",
+   "label": "Type",
+   "options": "Modelo_Type"
   }
  ],
  "has_web_view": 1,
  "index_web_pages_for_search": 1,
  "is_published_field": "published",
  "links": [],
- "modified": "2024-02-20 16:10:40.477876",
+ "modified": "2024-02-22 16:10:49.313737",
  "modified_by": "Administrator",
  "module": "Pokemon Api",
  "name": "Pokedex",

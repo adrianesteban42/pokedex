@@ -21,9 +21,8 @@ def update_type_from_api():
 			frappe.errprint(data)
 			if data:
 				for type_data in data["results"]:
-					ability_url = type_data["url"]
-					existeAbility = frappe.get_cached_doc('type', filters={"name_type": type_data["name"]}, fields=["name"])
-					if not existeAbility:
+					existeType = frappe.get_cached_doc('type', filters={"name_type": type_data["name"]}, fields=["name"])
+					if not existeType:
 						doc = frappe.new_doc('type')
 						doc.name_type = type_data["name"]
 						doc.insert()

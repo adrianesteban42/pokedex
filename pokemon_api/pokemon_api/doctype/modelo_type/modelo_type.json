@@ -1,0 +1,37 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-02-22 12:55:11.403869",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "modelo_type_section",
+  "name_type"
+ ],
+ "fields": [
+  {
+   "fieldname": "modelo_type_section",
+   "fieldtype": "Section Break",
+   "label": "modelo type"
+  },
+  {
+   "fieldname": "name_type",
+   "fieldtype": "Link",
+   "label": "Name Type",
+   "options": "type"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-02-22 12:56:41.654314",
+ "modified_by": "Administrator",
+ "module": "Pokemon Api",
+ "name": "Modelo_Type",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}

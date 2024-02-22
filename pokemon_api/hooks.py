@@ -25,7 +25,7 @@ app_license = "mit"
 # webform_include_css = {"doctype": "public/css/doctype.css"}
 
 # include js in page
-app_include_js = ["pokemon_api/pokemon_api/doctype/pokedex/pokedex_list.js"]
+# app_include_js = ["pokemon_api/pokemon_api/doctype/pokedex/pokedex_list.js"]
 # page_js = {"page" : "public/js/file.js"}
 
 # include js in doctype views
